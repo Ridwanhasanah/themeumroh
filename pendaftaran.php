@@ -17,8 +17,8 @@ include('inc/pendaftaran/pendaftaran_crud.php');
 					<div class="fourcol column">Nama Paket Layanan *</div>
 					<div class="field-container">
 						<div class="sixcol column last">
-							<select onchange="setTextField(this);" id="package" name="package">
-								<option ></option>
+							<select required onchange="setTextField(this);" id="package" name="package">
+								<option value="0" ></option>
 								<option value="package1"><?= $paket1;?></option>
 								<option value="package2"><?= $paket2;?></option>
 								<option value="package3"><?= $paket3;?></option>
@@ -30,8 +30,12 @@ include('inc/pendaftaran/pendaftaran_crud.php');
 								<option value="package9"><?= $paket9;?></option>
 								<option value="package10"><?= $paket10;?></option>
 							</select><br>
+							<span class="errorval" id="errorPackage"></span>
 						</div>
+
 					</div>
+					<br>
+					<br>
 					
 					<input id="packageText" type = "hidden" name = "packageText" value = "" />
 					<script type="text/javascript">
@@ -195,18 +199,22 @@ include('inc/pendaftaran/pendaftaran_crud.php');
 
 				<div class="elevencol column">
 					<div class="sixcol column last">
-						<div class="field-container"><input type="submit" id="send" name="submit" value="Daftar Sekarang"></div>
+						<div class="field-container">
+							<input type="submit" id="send" name="submit" value="Daftar Sekarang">
+						</div>
 					</div>
 				</div>
 
 				<div id="formhtml" class="elevencol column">
 					<div class="fourcol column">Periode Paket Perjalanan *</div>
 					<div class="sixcol column last">
-						<select onchange="setTextPpp(this);" name="packageppp" id="packageppp">
-							<option></option>
+						<select required onchange="setTextPpp(this);" name="packageppp" id="packageppp">
+							<option value="0"></option>
 							<option value="ppp1" id="ppp1">17 Desember 2015</option>
 							<option value="ppp1" id="ppp2">Bulan Febuari dan April 2016</option>
 						</select>
+						<br>
+						<span class="errorval" id="errorPackageppp"></span>
 						<input id="pppText" type = "hidden" name = "pppText" value = "" />
 						<script type="text/javascript">
 							function setTextPpp(ddl) {

@@ -78,6 +78,11 @@ Tags: travel, trip, tour, journal, nature, ecological, cruise, holiday, booking
 
 
 /* CSS QU  start*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 
 /* jQuery validasi start */
 	#names-error{

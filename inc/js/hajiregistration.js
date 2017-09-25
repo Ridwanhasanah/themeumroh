@@ -3,9 +3,46 @@ jQuery(document).ready(function(){
 /*===== Date Picker Start =====*/
 jQuery('.datePicker').datepicker({dateFormat:"yy-mm-dd"});
 /*===== Date Picker End =====*/
+/*====== Validate Select Option Start========*/
+
+
+
+jQuery('#send').click(function(){
+	
+	var package = jQuery('#package').val();
+	var errorPackage = jQuery('#errorPackage');
+ 	
+ 	var packageppp = jQuery('#packageppp').val();
+ 	var errorPackageppp = jQuery('#errorPackageppp');
+
+		if (package == 0) {
+			alert('Anda Harus memlih Paket Terlebih dahulu');
+			//errorPackage.html('Anda Harus memlih Paket Terlebih dahulu').show();
+			package.focusout(function(){
+				if (package != 0) {
+					errorPackage.html('Anda Harus memlih Paket Terlebih dahulu').hide();
+				}
+			})
+		}else if( packageppp == 0){
+			alert('Anda Harus memlih Periode Paket Perjalanan Terlebih dahulu');
+
+			//errorPackageppp.html('Anda Harus pilih Paket perjalan');
+		}else{
+			errorPackage.hide();
+			errorPackageppp.hide();
+		}	
+	})
+
+/*====== Validate Select Option End========*/
 
 
 	/*===== jQuery validation Start ========*/
+
+	/*$.validator.addMethod("valueNotEquals", function(value, element, arg){
+		return arg !== value;
+	}, "Value must not equal arg.");*/
+
+
 	jQuery('#formRegisUmroh').validate({
 		rules: {
     // simple rule, converted to {required:true}
@@ -14,8 +51,12 @@ jQuery('.datePicker').datepicker({dateFormat:"yy-mm-dd"});
     email: {
     	required: true,
     	email: true
-    }
-}
+    },SelectName: { valueNotEquals:"default"}
+ 	},
+
+ 	message:{
+ 		SelectName: {valueNotEquals:"Tolong Pilih Paket"}
+ 	}
 });
 	/*===== jQuery validation End ===e=====*/
 	/*========== Menampilkan Nama Paket ketika di Select Strat =========*/
