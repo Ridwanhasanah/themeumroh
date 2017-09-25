@@ -1,0 +1,50 @@
+Menambahkan folder inc untuk tempat edit
+
+Telah melakukan edit dan penambahan pada moudle-search.php dan style.css
+style.css
+.tour-search-form menggannti warna backgroung dari #404040; menjadi #fff;
+.header-menu ul ul mengganti dari min-width:120px; menjadi min-width:200px; 
+
+Pada File content-tour-lilst.php
+telah melakkan penambahan dan Edit pada bagian yang di tandai <!-- Edited by Ridwan Start --> sampai <!-- Edited by Ridwan End -->
+-Mengubah menambahkan buton link pada footer
+-mengubah short dec menjadi di atas Destination 
+
+Penambahan file dan folder pada directory inc/viewcount.php
+-fungsi untuk counter post
+
+Penambahan code pada function.php di bagian yang di tandai /*Edit by Ridwan Start*/ sampai /*Edit by Ridwan End*/
+-menambahkan counter post (Menghitung berapa banyak ornag yang melihat post)
+
+Penambahan Code pada module-related.php
+-Mengubah Header Relasi dan Menambah link untuk menuju page alltour (Paket Umroh lainnya / Lihat Semua)
+
+Penambahan COde pada template-tours.php
+-Membuat Header untk Page Tour (Semua Paket Layanan Kami Didukung oleh Maskapai & Hotel Bintang 5)
+
+Merubah dan Menambah code pada file contetnt-post-grid.php
+-Membuat post Grid
+
+Merubah templates file templates-posts.php
+-Memeubat post Grid
+
+Merubah file function.php
+-menambahkan include file hajiregistration.js
+
+Menambahkan file 
+-hajiregister.js dan jquery-3.2.1.js di folder inc/js 
+
+
+Mengubah CSS
+textarea,
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+	width: 100%; ==========>menambahkan ini 
+	-moz-box-shadow:0 2px 4px rgba(204,204,204,0.4) inset;
+	-webkit-box-shadow:0 2px 4px rgba(204,204,204,0.4) inset;
+	box-shadow:0 2px 4px rgba(204,204,204,0.4) inset;
+}
