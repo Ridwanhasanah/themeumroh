@@ -3,23 +3,76 @@
 //include('../../pendaftaran.php');
 global $wpdb;
 
+$options = get_option("nama-paket-fields");
+$namaPaket1  = $options['npl1'];
+$namaPaket2  = $options['npl2'];
+$namaPaket3  = $options['npl3'];
+$namaPaket4  = $options['npl4'];
+$namaPaket5  = $options['npl5'];
+$namaPaket6  = $options['npl6'];
+$namaPaket7  = $options['npl7'];
+$namaPaket8  = $options['npl8'];
+$namaPaket9  = $options['npl9'];
+$namaPaket10 = $options['npl10'];
 
-$paket1 = "Paket Umroh Plus Istanbul Bursa Cappadocia";
-$paket2 = "Paket Umroh Plus Kario Mesir";
-$paket3 = "Paket Umroh Plus Dubai";
-$paket4 = "Paket Umroh Plus Istanbul Dan Bursa";
-$paket5 = "Paket Umroh Murah Rahmah 12 hari";
-$paket6 = "Paket Umroh Murah Rahmah";
-$paket7 = "Paket Umroh Promo Febuari 2016";
-$paket8 = "Paket Umroh Plus Turki Istanbul Bursa";
-$paket9 = "Paket Umroh Plus Turki Istanbul Bursa 2016";
-$paket10 = "Paket Umroh Hemat Maret 2016";
+$tes = $options['test'];
 
+
+$paket1  = $namaPaket1;//"Paket Umroh Plus Istanbul Bursa Cappadocia";
+$paket2  = $namaPaket2;//"Paket Umroh Plus Kario Mesir";
+$paket3  = $namaPaket3;//"Paket Umroh Plus Dubai";
+$paket4  = $namaPaket4;//"Paket Umroh Plus Istanbul Dan Bursa";
+$paket5  = $namaPaket5;//"Paket Umroh Murah Rahmah 12 hari";
+$paket6  = $namaPaket6;//"Paket Umroh Murah Rahmah";
+$paket7  = $namaPaket7;//"Paket Umroh Promo Febuari 2016";
+$paket8  = $namaPaket8;//"Paket Umroh Plus Turki Istanbul Bursa";
+$paket9  = $namaPaket9;//"Paket Umroh Plus Turki Istanbul Bursa 2016";
+$paket10 = $namaPaket10;//"Paket Umroh Hemat Maret 2016";
+
+/*===== Fungsi menampilkan nili di form untuk di ambil menggunakan id di js
+ dan di tampilkan pada select Paket perjalanan*/
+ /*===== Start =====*/
+ function npl( //npl adalah Nama Paket Layanan
+	$ppp1,
+	$ppp1val, //paket layanan 1-2 dst
+	$ppp2,
+	$ppp2val, //nama untuk di ambil nilainya $_POST['name']
+	$desti,
+	$destival,
+	$duration,
+	$durationval,
+	$price,
+	$priceval,
+	$airlines,
+	$airlinesval,
+	$hotel,
+	$hotelval 
+	)
+{
+
+	?>
+	<div class="rhide">
+		<p id="<?=$ppp1;?>"><?=$ppp1val;?></p>
+		<p id="<?=$ppp2;?>"><?=$ppp2val;?></p>
+		<p id="<?=$desti;?>"><?=$destival;?></p>
+		<p id="<?=$duration;?>"><?=$durationval;?></p>
+		<p id="<?=$price;?>"><?=$priceval;?></p>
+		<p id="<?=$airlines?>"><?=$airlinesval;?></p>
+		<p id="<?=$hotel?>"><?=$hotelval?></p>
+	</div>
+	<?php
+}
+/*===== end =====*/
+
+
+/*===== Fungsi untuk menampilkan Java scrip Start*/
 function showJs($value){
 	
 	echo "<script type='text/javascript'>".$value."</script>";
 	
 }
+/*===== Fungsi untuk menampilkan Java scrip End*/
+
 if (isset($_POST['submit'])) {
 	
 	if(strlen($_POST['names']) == 0 || strlen($_POST['names']) <=3){
@@ -96,6 +149,7 @@ if (isset($_POST['submit'])) {
 	/*Redrect link Start*/
 	?>
 	<script type="text/javascript">
+		alert('Terima Kasih data Sudah Tersimpan ');
 	window.location.replace("<?= get_home_url();?>");
 	</script>
 	<?php

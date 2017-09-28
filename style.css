@@ -78,6 +78,10 @@ Tags: travel, trip, tour, journal, nature, ecological, cruise, holiday, booking
 
 
 /* CSS QU  start*/
+.rhide{
+	display: none;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -167,7 +171,7 @@ input[type=number]::-webkit-outer-spin-button {
 .rleft{
 	padding: 3px 0px 3px 0px;
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 	float: left;
 	position: relative;
 	border-bottom: 1px dotted #ddd;

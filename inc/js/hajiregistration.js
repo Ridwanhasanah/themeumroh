@@ -75,6 +75,7 @@ jQuery('#send').click(function(){
 		var hotel     = jQuery('#hotel');
 		var roomhotel = jQuery('#roomhotel');
 		var conhotel  = jQuery('#con-hotel');
+		var test = jQuery('#nilainya').text();
 
 		function ppp( fppp1, fppp2, fdesti, ftime, fprice, fairline, fhotel){
 
@@ -93,15 +94,15 @@ jQuery('#send').click(function(){
 
 
 		if (selectedOption.val() == "package1") {
-			ppp('Bearngkat Tanggal 11 26 Des 2015',
-				'Keberangkatan Berikutnya bulan Febuari & April 2016',
-				'Mekah, Madinah & Turkey',
-				'13 Hari',
-				'$ 2,700',
-				'TURKISH AIR',
-				'');
-			conhotel.hide();
-			roomhotel.hide();
+			ppp( jQuery('#p1ppp1').text(),
+				jQuery('#p1ppp2').text(),
+				jQuery('#p1desti').text(),
+				jQuery('#p1duration').text(),
+				'$ '+jQuery('#p1price').text(),
+				jQuery('#p1airlines').text(),
+				jQuery('#p1hotel').text());
+			conhotel.show();
+			roomhotel.show();
 		}else if (selectedOption.val() == "package2") {
 			ppp('17 Desember 2015',
 				'Bulan Febuari dan April 2016',
@@ -130,10 +131,10 @@ jQuery('#send').click(function(){
 				'$ 2,500',
 				'SAUDI ARABIA , TURKIS AIRLANES',
 				'');
-			conhotel.hide();
-			roomhotel.hide();
+			conhotel.show();
+			roomhotel.show();
 		}else if (selectedOption.val() == "package5") {
-			ppp('Bearngkat Tanggal 11 26 Des 2015',
+			ppp('Berangkat Tanggal 11 26 Des 2015',
 				'Keberangkatan Berikutnya bulan Febuari & April 2016',
 				'Mekah, Madinah & Turkey',
 				'13 Hari',
@@ -170,8 +171,8 @@ jQuery('#send').click(function(){
 				'$ 2,500',
 				'SAUDI ARABIA , TURKIS AIRLANES',
 				'');
-			conhotel.hide();
-			roomhotel.hide();
+			conhotel.show();
+			roomhotel.show();
 		}else if (selectedOption.val() == "package9") {
 			ppp('Desember 2015',
 				'',
@@ -190,8 +191,8 @@ jQuery('#send').click(function(){
 				'$ 2,500',
 				'SAUDI ARABIA , TURKIS AIRLANES',
 				'');
-			conhotel.hide();
-			roomhotel.hide();
+			conhotel.show();
+			roomhotel.show();
 		}
 
 
