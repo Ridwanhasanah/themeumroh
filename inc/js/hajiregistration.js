@@ -104,93 +104,93 @@ jQuery('#send').click(function(){
 			conhotel.show();
 			roomhotel.show();
 		}else if (selectedOption.val() == "package2") {
-			ppp('17 Desember 2015',
-				'Bulan Febuari dan April 2016',
-				'Mekah, Madinah & Turkey',
-				'11 Hari',
-				'$ 2,050',
-				'Saudia/Emirates/Ettihad/Egypt Air',
-				'Hotel Setaraf Bintang 4,Hotel Madinah');
+			ppp( jQuery('#p2ppp1').text(),
+				jQuery('#p2ppp2').text(),
+				jQuery('#p2desti').text(),
+				jQuery('#p2duration').text(),
+				'$ '+jQuery('#p2price').text(),
+				jQuery('#p2airlines').text(),
+				jQuery('#p2hotel').text());
 			conhotel.show();
 			roomhotel.show();
 		}else if (selectedOption.val() == "package3") {
-			ppp('Desember 2015',
-				'',
-				'Dubai, Mekkah, Madinah',
-				'11 Hari',
-				'$ 2,050',
-				'Emirates/ Garuda/ Ettihad/Saudia Air',
-				'Hotel Setaraf Bintang 3 Mekkah,Hotel Mekkah');
+			ppp( jQuery('#p3ppp1').text(),
+				jQuery('#p3ppp2').text(),
+				jQuery('#p3desti').text(),
+				jQuery('#p3duration').text(),
+				'$ '+jQuery('#p3price').text(),
+				jQuery('#p3airlines').text(),
+				jQuery('#p3hotel').text());
 			conhotel.show();
 			roomhotel.show();
 		}else if (selectedOption.val() == "package4") {
-			ppp('Bearngkat Tanggal 11, 26 Desember 2015',
-				'',
-				'Mekah, Madinah & Turkey',
-				'12 Hari',
-				'$ 2,500',
-				'SAUDI ARABIA , TURKIS AIRLANES',
-				'');
+			ppp( jQuery('#p4ppp1').text(),
+				jQuery('#p4ppp2').text(),
+				jQuery('#p4desti').text(),
+				jQuery('#p4duration').text(),
+				'$ '+jQuery('#p4price').text(),
+				jQuery('#p4airlines').text(),
+				jQuery('#p4hotel').text());
 			conhotel.show();
 			roomhotel.show();
 		}else if (selectedOption.val() == "package5") {
-			ppp('Berangkat Tanggal 11 26 Des 2015',
-				'Keberangkatan Berikutnya bulan Febuari & April 2016',
-				'Mekah, Madinah & Turkey',
-				'13 Hari',
-				'$ 2,700',
-				'TURKISH AIR',
-				'');
-			conhotel.hide();
-			roomhotel.hide();
+			ppp( jQuery('#p5ppp1').text(),
+				jQuery('#p5ppp2').text(),
+				jQuery('#p5desti').text(),
+				jQuery('#p5duration').text(),
+				'$ '+jQuery('#p5price').text(),
+				jQuery('#p5airlines').text(),
+				jQuery('#p5hotel').text());
+			conhotel.show();
+			roomhotel.show();
 		}else if (selectedOption.val() == "package6") {
-			ppp('17 Desember 2015',
-				'Bulan Febuari dan April 2016',
-				'Mekah, Madinah & Turkey',
-				'11 Hari',
-				'$ 2,050',
-				'Saudia/Emirates/Ettihad/Egypt Air',
-				'Hotel Setaraf Bintang 4,Hotel Madinah');
+			ppp( jQuery('#p6ppp1').text(),
+				jQuery('#p6ppp2').text(),
+				jQuery('#p6desti').text(),
+				jQuery('#p6duration').text(),
+				'$ '+jQuery('#p6price').text(),
+				jQuery('#p6airlines').text(),
+				jQuery('#p6hotel').text());
 			conhotel.show();
 			roomhotel.show();
 		}else if (selectedOption.val() == "package7") {
-			ppp('Desember 2015',
-				'',
-				'Dubai, Mekkah, Madinah',
-				'11 Hari',
-				'$ 2,050',
-				'Emirates/ Garuda/ Ettihad/Saudia Air',
-				'Hotel Setaraf Bintang 3 Mekkah,Hotel Mekkah');
+			ppp( jQuery('#p7ppp1').text(),
+				jQuery('#p7ppp2').text(),
+				jQuery('#p7desti').text(),
+				jQuery('#p7duration').text(),
+				'$ '+jQuery('#p7price').text(),
+				jQuery('#p7airlines').text(),
+				jQuery('#p7hotel').text());
 			conhotel.show();
 			roomhotel.show();
 		}else if (selectedOption.val() == "package8") {
-			ppp('Bearngkat Tanggal 11, 26 Desember 2015',
-				'',
-				'Mekah, Madinah & Turkey',
-				'12 Hari',
-				'$ 2,500',
-				'SAUDI ARABIA , TURKIS AIRLANES',
-				'');
+			ppp( jQuery('#p8ppp1').text(),
+				jQuery('#p8ppp2').text(),
+				jQuery('#p8desti').text(),
+				jQuery('#p8duration').text(),
+				'$ '+jQuery('#p8price').text(),
+				jQuery('#p8airlines').text(),
+				jQuery('#p8hotel').text());
 			conhotel.show();
 			roomhotel.show();
 		}else if (selectedOption.val() == "package9") {
-			ppp('Desember 2015',
-				'',
-				'Dubai, Mekkah, Madinah',
-				'11 Hari',
-				'$ 2,050',
-				'Emirates/ Garuda/ Ettihad/Saudia Air',
-				'Hotel Setaraf Bintang 3 Mekkah,Hotel Mekkah');
+			ppp( jQuery('#p9ppp1').text(),
+				jQuery('#p9ppp2').text(),
+				jQuery('#p9desti').text(),
+				jQuery('#p9duration').text(),
+				'$ '+jQuery('#p9price').text(),
+				jQuery('#p9airlines').text(),
+				jQuery('#p9hotel').text());
 			conhotel.show();
 			roomhotel.show();
 		}else if (selectedOption.val() == "package10") {
-			ppp('Bearngkat Tanggal 11, 26 Desember 2015',
-				'',
-				'Mekah, Madinah & Turkey',
-				'12 Hari',
-				'$ 2,500',
-				'SAUDI ARABIA , TURKIS AIRLANES',
-				'');
+			ppp( jQuery('#p10ppp1').text(),
+				jQuery('#p10ppp2').text(),
+				jQuery('#p10desti').text(),
+				jQuery('#p10duration').text(),
+				'$ '+jQuery('#p10price').text(),
+				jQuery('#p10airlines').text(),
+				jQuery('#p10hotel').text());
 			conhotel.show();
 			roomhotel.show();
 		}
