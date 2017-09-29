@@ -1,4 +1,35 @@
 .show1,.show2,.show3,.show4,.show5,
-.show6,.show7,.show8,.show9,.show10{
+.show6,.show7,.show8,.show9,.show10,
+.ctnshow1,.ctnshow2,.ctnshow3,.ctnshow4,
+.ctnshow5,.ctnshow6,.ctnshow7{
 	display: none;
+}
+.rDivForm{
+	padding: 10px;
+	
+}
+.rForm{
+
+}
+.rInput{
+	padding: 7px;
+	width: 400px;
+	border-radius: 5px;
+	
+
+}
+.rInput:hover{
+	background: #e4e4e4;
+}
+
+.rButton{
+	width: 200px;
+}
+
+.rTable{
+
+}
+
+.rTable tr{
+	margin: 50px 5px;
 }

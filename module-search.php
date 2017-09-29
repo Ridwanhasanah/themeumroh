@@ -1,55 +1,57 @@
+<?php $options = get_option("nama-content-fields" ); ?>
+
 <div class="tour-search-form placeholder-form">
 	<div class="form-title">
 	<!-- Edited Ridwan Start-->
-		<h4><?php _e('Layanan Paket Kami', 'midway'); ?></h4>
+		<h4><?php _e($options['titlePaket'], 'midway'); ?></h4>
 	</div>
 		<ul class="ulli">
 			<li class="rleft">
 				<div class="colored-icon icon-6"></div>
 				<div class="rlayanan">
-					<p><a  href="#">Paket Umroh Plus Istanbul Bursa Cappadoccia
+					<p><a target="_blank" href="<?=$options['link1'];?>"><?=$options['content1'];?>
 					</a></p>
 				</div>
 			</li>
 			<li class="rleft">
 				<div class="colored-icon icon-6"></div>
 				<div class="rlayanan">
-					<p><a  href="#">Paket Umroh Plus Kairo Mesir
+					<p><a target="_blank"  href="<?=$options['link2'];?>"><?=$options['content2'];?>
 					</a></p>
 				</div>
 			</li>
 			<li class="rleft">
 				<div class="colored-icon icon-6"></div>
 				<div class="rlayanan">
-					<p><a  href="#">Paket Umroh Murah Rahmah
+					<p><a target="_blank"  href="<?=$options['link3'];?>"><?=$options['content3'];?>
 					</a></p>
 				</div>
 			</li>
 			<li class="rleft">
 				<div class="colored-icon icon-6"></div>
 				<div class="rlayanan">
-					<p><a  href="#">Paket Umroh Murah Rahmah 12 Hari
+					<p><a target="_blank"  href="<?=$options['link4'];?>"><?=$options['content4'];?>
 					</a></p>
 				</div>
 			</li>
 			<li class="rleft">
 				<div class="colored-icon icon-6"></div>
 				<div class="rlayanan">
-					<p><a  href="#">Paket Umroh Plus Dubai
+					<p><a target="_blank"  href="<?=$options['link5'];?>"><?=$options['content5'];?>
 					</a></p>
 				</div>
 			</li>
 			<li class="rleft">
 				<div class="colored-icon icon-6"></div>
 				<div class="rlayanan">
-					<p><a  href="#">Paket Umroh Plus Istanbul Bursa Cappadoccia
+					<p><a target="_blank"  href="<?=$options['link6'];?>"><?=$options['content6'];?>
 					</a></p>
 				</div>
 			</li>
 			<li class="rleft">
 				<div class="colored-icon icon-6"></div>
 				<div class="rlayanan">
-					<p><a  href="#">Paket Umroh Murah Promo Feabuari 2018
+					<p><a target="_blank"  href="<?=$options['link7'];?>"><?=$options['content7'];?>
 					</a></p>
 				</div>
 			</li>

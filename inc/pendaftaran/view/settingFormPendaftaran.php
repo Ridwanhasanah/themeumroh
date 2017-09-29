@@ -2,13 +2,14 @@
 <?php
 
 ?>
+<div class="rDivForm">
 <h1>Setting Form Pendaftaran</h1>
-<form method="post">
+<form class="rForm" method="post" action="#">
 	<table>
 		<tr>
-			<td>Paket Layanan 1</td>
+			<td><b>Paket Layanan 1</b></td>
 			<td>
-				<input type="type" name="npl1" value="<?php echo $options['npl1']; ?>">
+				<input class="rInput" type="type" name="npl1" value="<?php echo $options['npl1']; ?>">
 				<?php 
 				paketlayanan(
 					'form1','show1',
@@ -24,9 +25,9 @@
 			</td>
 		</tr>
 		<tr>
-			<td>Paket Layanan 2</td>
+			<td><b>Paket Layanan 2</b></td>
 			<td>
-				<input type="type" name="npl2" value="<?php echo $options['npl2']; ?>">
+				<input class="rInput" type="type" name="npl2" value="<?php echo $options['npl2']; ?>">
 				<?php 
 				paketlayanan(
 					'form2','show2',
@@ -43,9 +44,9 @@
 
 		</tr>
 		<tr>
-			<td>Paket Layanan 3</td>
+			<td><b>Paket Layanan 3</b></td>
 			<td>
-				<input type="type" name="npl3" value="<?php echo $options['npl3']; ?>">
+				<input class="rInput" type="type" name="npl3" value="<?php echo $options['npl3']; ?>">
 				<?php 
 				paketlayanan(
 					'form3','show3',
@@ -61,9 +62,9 @@
 			</td>
 		</tr>
 		<tr>
-			<td>Paket Layanan 4</td>
+			<td><b>Paket Layanan 4</b></td>
 			<td>
-				<input type="type" name="npl4" value="<?php echo $options['npl4']; ?>">
+				<input class="rInput" type="type" name="npl4" value="<?php echo $options['npl4']; ?>">
 				<?php 
 				paketlayanan(
 					'form4','show4',
@@ -79,9 +80,9 @@
 			</td>
 		</tr>
 		<tr>
-			<td>Paket Layanan 5</td>
+			<td><b>Paket Layanan 5 </b></td>
 			<td>
-				<input type="type" name="npl5" value="<?php echo $options['npl5']; ?>">
+				<input class="rInput" type="type" name="npl5" value="<?php echo $options['npl5']; ?>">
 				<?php 
 				paketlayanan(
 					'form5','show5',
@@ -97,9 +98,9 @@
 			</td>
 		</tr>
 		<tr>
-			<td>Paket Layanan 6</td>
+			<td><b>Paket Layanan 6</b></td>
 			<td>
-				<input type="type" name="npl6" value="<?php echo $options['npl6']; ?>">
+				<input class="rInput" type="type" name="npl6" value="<?php echo $options['npl6']; ?>">
 				<?php 
 				paketlayanan(
 					'form6','show6',
@@ -115,9 +116,9 @@
 			</td>
 		</tr>
 		<tr>
-			<td>Paket Layanan 7</td>
+			<td><b>Paket Layanan 7</b></td>
 			<td>
-				<input type="type" name="npl7" value="<?php echo $options['npl7']; ?>">
+				<input class="rInput" type="type" name="npl7" value="<?php echo $options['npl7']; ?>">
 				<?php 
 				paketlayanan(
 					'form7','show7',
@@ -133,9 +134,9 @@
 			</td>
 		</tr>
 		<tr>
-			<td>Paket Layanan 8</td>
+			<td><b>Paket Layanan 8</b></td>
 			<td>
-				<input type="type" name="npl8" value="<?php echo $options['npl8']; ?>">
+				<input class="rInput" type="type" name="npl8" value="<?php echo $options['npl8']; ?>">
 				<?php 
 				paketlayanan(
 					'form8','show8',
@@ -151,9 +152,9 @@
 			</td>
 		</tr>
 		<tr>
-			<td>Paket Layanan 9</td>
+			<td><b>Paket Layanan 9</b></td>
 			<td>
-				<input type="type" name="npl9" value="<?php echo $options['npl9']; ?>">
+				<input class="rInput" type="type" name="npl9" value="<?php echo $options['npl9']; ?>">
 				<?php 
 				paketlayanan(
 					'form9','show9',
@@ -169,9 +170,9 @@
 			</td>
 		</tr>
 		<tr>
-			<td>Paket Layanan 10</td>
+			<td><b>Paket Layanan 10</b></td>
 			<td>
-				<input type="type" name="npl10" value="<?php echo $options['npl10']; ?>">
+				<input class="rInput" type="type" name="npl10" value="<?php echo $options['npl10']; ?>">
 				<?php 
 				paketlayanan(
 					'form10','show10',
@@ -187,6 +188,7 @@
 			</td>
 		</tr>
 	</table>
-	
-	<input class="button" type="submit" name="save" value="save">
+	<br>
+	<input class="button button-primary" type="submit" name="save" value="Save Changes">
 </form>
+</div>

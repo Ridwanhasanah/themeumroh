@@ -26,4 +26,15 @@ tableshow('.form10', '.show10');
 
 /*========== Setting Option Form ENd ==========*/
 
+/*========== Setting Option Sidebar Home Start ==========*/
+tableshow('.ctnform1', '.ctnshow1');
+tableshow('.ctnform2', '.ctnshow2');
+tableshow('.ctnform3', '.ctnshow3');
+tableshow('.ctnform4', '.ctnshow4');
+tableshow('.ctnform5', '.ctnshow5');
+tableshow('.ctnform6', '.ctnshow6');
+tableshow('.ctnform7', '.ctnshow7');
+/*========== Setting Option Sidebar Home ENd ==========*/
+
+
 });

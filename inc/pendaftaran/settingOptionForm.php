@@ -109,7 +109,7 @@ if ($_POST['save']) {
 
 
 
-	update_option("nama-paket-fields",$options);//update_option berfungsi untuk menimpan inputan 
+	update_option("nama-paket-fields",$options);//update_option berfungsi untuk meynimpan input class="rInput"an 
 	echo '<div class="updated"><p><srong>Option Saved.</p><strong></div>';
 }
 
@@ -139,31 +139,31 @@ function paketlayanan(
 		<table>
 			<tr>
 				<td>Periode Paket Perjalanan 1</td>
-				<td><input type="text" name="<?=$ppp1;?>" value="<?=$ppp1val?>"></td>
+				<td><input class="rInput"  type="text" name="<?=$ppp1;?>" value="<?=$ppp1val?>"></td>
 			</tr>
 			<tr>
 				<td>Periode Paket Perjalanan 2</td>
-				<td><input type="text" name="<?=$ppp2;?>" value="<?=$ppp2val?>"></td>
+				<td><input class="rInput" type="text" name="<?=$ppp2;?>" value="<?=$ppp2val?>"></td>
 			</tr>
 			<tr>
 				<td>Tujuan Negara</td>
-				<td><input type="text" name="<?=$desti;?>" value="<?=$destival?>"></td>
+				<td><input class="rInput" type="text" name="<?=$desti;?>" value="<?=$destival?>"></td>
 			</tr>
 			<tr>
 				<td>Durasi Perjalanan</td>
-				<td><input type="text" name="<?=$duration;?>" value="<?=$durationval;?>"></td>
+				<td><input class="rInput" type="text" name="<?=$duration;?>" value="<?=$durationval;?>"></td>
 			</tr>
 			<tr>
 				<td>Harga Paket</td>
-				<td><input type="number" name="<?=$price;?>" value="<?=$priceval;?>"></td>
+				<td><input class="rInput" type="number" name="<?=$price;?>" value="<?=$priceval;?>"></td>
 			</tr>			
 			<tr>
 				<td>Maskapai Penerbangan</td>
-				<td><input type="text" name="<?=$airlines;?>" value="<?=$airlinesval;?>"></td>
+				<td><input class="rInput" type="text" name="<?=$airlines;?>" value="<?=$airlinesval;?>"></td>
 			</tr>
 			<tr>
 				<td>Hotel</td>
-				<td><input type="text" name="<?=$hotel;?>" value="<?=$hotelval;?>"></td>
+				<td><input class="rInput" type="text" name="<?=$hotel;?>" value="<?=$hotelval;?>"></td>
 			</tr>
 		</table>
 	</div>

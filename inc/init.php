@@ -31,7 +31,7 @@ add_action('admin_enqueue_scripts','styleJs' );
 /*======== Script untuk BackEnd End =========*/
 
 
-
+/*========== Menu Setting Option Form Start =========*/
 function settingFormMenu(){
 
 	add_theme_page( 
@@ -47,4 +47,25 @@ function pendaftaranFormSetting(){
 	require_once('pendaftaran/settingOptionForm.php');
 	require_once('pendaftaran/view/settingFormPendaftaran.php');
 }
+
+/*========== Menu Setting Option Form ENd =========*/
+
+/*========== Menu Setting Option Sidebar Home Start =========*/
+function optionSidebarHome(){
+	add_theme_page(
+		'settingSidebarMenu',
+		'Setting Sidebar Home',
+		'manage_options',
+		'settingSidebar',
+		'settingSidebarHome'
+	);
+}
+
+add_action('admin_menu','optionSidebarHome' );
+
+function settingSidebarHome(){
+	require_once('pendaftaran/view/settingSidebarHome.php');
+}
+/*========== Menu Setting Option Sidebar Home Start =========*/
+
 ?>

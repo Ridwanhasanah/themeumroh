@@ -1,4 +1,5 @@
 Menambahkan folder inc untuk tempat edit
+-semua edit utama ada di folder inc
 
 Telah melakukan edit dan penambahan pada moudle-search.php dan style.css
 style.css

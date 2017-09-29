@@ -4,6 +4,7 @@
 global $wpdb;
 
 $options = get_option("nama-paket-fields");
+
 $namaPaket1  = $options['npl1'];
 $namaPaket2  = $options['npl2'];
 $namaPaket3  = $options['npl3'];
